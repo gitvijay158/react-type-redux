@@ -31,7 +31,7 @@ const App: React.FC = () => {
     </Provider>
   );
 };
-
+    
 const AppContent: React.FC<{ isSidebarOpen: boolean; setSidebarOpen: React.Dispatch<React.SetStateAction<boolean>> }> = ({ isSidebarOpen, setSidebarOpen }) => {
   const dispatch = useDispatch<AppDispatch>();
   const auth = useSelector((state: RootState) => state.auth);
